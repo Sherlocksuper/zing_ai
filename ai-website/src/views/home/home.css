@@ -1,0 +1,100 @@
+#home {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+#home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    position: fixed;
+    width: calc(100% - 40px);
+}
+
+#user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.container_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Border to separate the bar from the content */
+}
+
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    cursor: pointer; /* Hand cursor on hover for better UX */
+}
+
+
+.user-function {
+    position: absolute;
+    background-color: #f8f9fa; /* Light grey color for a softer look */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Adding shadow for a 3D look */
+    border: 1px solid #ddd; /* Border for definition */
+    padding: 20px; /* More space inside the box */
+    font-size: 16px;
+
+
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    max-height: 70vh;
+    min-height: 70vh;
+    max-width: 50vw;
+    min-width: 50vw;
+
+    border-radius: 10px; /* Rounded corners for a modern look */
+
+    display: none;
+}
+
+.user-function a {
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+}
+
+
+.return {
+    cursor: pointer; /* Hand cursor on hover for better UX */
+}
+
+.return:hover {
+    color: #007bff; /* Blue color on hover */
+    background: #f8f9fa; /* Light grey background on hover */
+}
+
+
+.user-function-list {
+    margin-top: 20px; /* More space between the bar and the list */
+}
+
+.user-function-item {
+    padding: 10px; /* More space inside each item */
+    border-radius: 5px; /* Rounded corners for each item */
+    margin-bottom: 10px; /* Space between items */
+    transition: background-color 0.3s; /* Transition for a smooth color change */
+}
+
+.user-function-item:hover {
+    background-color: #eee; /* Light grey background on hover */
+}

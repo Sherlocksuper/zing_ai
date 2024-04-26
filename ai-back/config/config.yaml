@@ -1,0 +1,47 @@
+cos:
+  bucket: ""
+  region: ""
+  secretid: ""
+  secretkey: ""
+  baseurl: ""
+
+email:
+  email_author_email: ""
+  email_password: ""
+  email_title: "注册验证码"
+  email_template: "您的注册验证码为：%s, 请在5分钟内完成注册"
+
+mysql:
+  host: "localhost"
+  port: 3306
+  charset: utf8mb4
+  username: "root"
+  password: "root"
+  database: "ai"
+  backup_path: ""
+
+openai:
+  openai_token: ""
+  openai_baseurl: "https://hk.xty.app/v1"
+  model: "gpt-3.5-turbo"
+  max_tokens: 2000
+  default_system_message: "你是我的ai助手，请帮助我解决问题"
+
+redis:
+  address: "localhost:6379"
+  password: ""
+  db: 0
+
+qianfai:
+  diffussion_xl_baseurl:
+  qf_baseurl:
+  qf_tokenurl:
+  qf_apikey:
+  qf_apisecretkey:
+
+cors:
+  origin: "*"
+  headers: "Content-Type,Cache-Control,User-Agent,Keep-Alive,DNT,AccessToken,Authorization"
+  methods: "OPTIONS,GET,POST,PUT,DELETE"
+  credentials: false
+  max_age: 600

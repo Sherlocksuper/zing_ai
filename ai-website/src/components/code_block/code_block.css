@@ -1,0 +1,31 @@
+.container {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px; /* 添加圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    background: #f8f9fa; /* 更改背景色 */
+    overflow-x: scroll;
+
+    position: sticky;
+}
+
+.copy {
+    cursor: pointer;
+    background: #f8f9fa; /* 更改背景色 */
+    font-size: 14px; /* 更改字体大小 */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px ;
+    border: none;
+    color: #333;
+}
+
+.code {
+    width: 100%;
+    font-family: 'Courier New', monospace; /* 更改字体 */
+    font-size: 14px; /* 更改字体大小 */
+    color: #333;
+    background: #f8f9fa;
+}

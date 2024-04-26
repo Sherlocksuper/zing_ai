@@ -1,0 +1,66 @@
+.chat-list-container {
+    background: #f7f7f7; /* 浅灰色背景 */
+    border: 1px solid #e1e1e1; /* 边框颜色 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微的阴影，增加层次感 */
+    overflow: hidden; /* 防止内容溢出 */
+    max-height: 400px; /* 最大高度 */
+    width: 400px; /* 宽度 */
+    overflow-y: auto; /* 纵向滚动条 */
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 顶部距离 */
+    left: 50%; /* 左边距离 */
+    transform: translate(-50%, -50%); /* 居中 */
+
+}
+
+.chat-list-title {
+    color: #333; /* 文字颜色 */
+    font-size: 1.2em; /* 字体大小 */
+    margin: 0; /* 移除默认外边距 */
+    padding: 10px 15px; /* 内边距 */
+}
+
+.close-history {
+    background: transparent; /* 透明背景 */
+    border: none; /* 无边框 */
+    color: #666; /* 文字颜色 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+    padding: 5px 10px; /* 内边距 */
+    margin-left: 10px; /* 左边距 */
+    transition: background-color 0.3s; /* 背景颜色渐变效果 */
+}
+
+.close-history:hover {
+    background-color: #e1e1e1; /* 鼠标悬停时的背景颜色 */
+}
+
+.chat-list {
+    padding: 0;
+    list-style: none; /* 移除列表默认样式 */
+}
+
+.chat-item {
+    display: flex; /* 弹性盒子布局 */
+    align-items: center; /* 垂直居中 */
+    padding: 10px 15px; /* 内边距 */
+    transition: background-color 0.3s; /* 背景颜色渐变效果 */
+}
+
+.chat-item:hover {
+    background-color: #e1e1e1; /* 鼠标悬停时的背景颜色 */
+}
+
+.chat-name {
+    flex: 1; /* 让chat-name占据剩余空间 */
+    color: #333; /* 文字颜色 */
+    margin-right: 10px; /* 右边距 */
+    white-space: nowrap; /* 防止换行 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    text-overflow: ellipsis; /* 文本溢出时显示省略号 */
+}
+
+.chat-time {
+    color: #999; /* 文字颜色 */
+    font-size: 0.9em; /* 字体大小 */
+}
